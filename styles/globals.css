@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  tr:nth-child(even){
+    @apply bg-table-cell-green
+  }
+}
