@@ -15,6 +15,7 @@ module.exports = {
         'table-cell-green': '#6fe6b7',
         'table-cell-darker-green': '#35d399',
         'th-green': '#15b981',
+        'fake-button': '#d1fae4',
       },
     },
   },
