@@ -2,12 +2,12 @@ import { hours } from "../pages/data";
 const tableStyle1 = 'border border-gray-700'
 const tableStyle2 = 'border border-gray-700 bg-th-green'
 
-export default function ReportTable({ initialData }) {
-  console.log("ITEMS", initialData)
-  // console.log("KEY", initialData.key)
+export default function ReportTable({ user }) {
+
+
   return (
     <div>
-      {initialData.length === 0
+      {user
         ? <h2 className="my-6 text-sm text-center"> No Cookie Stands Available </h2>
         : <table className="w-2/3 mx-auto mb-12 text-sm text-center">
           <thead className="mx-auto text-sm text-center">

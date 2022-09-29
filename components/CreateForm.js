@@ -1,28 +1,25 @@
 export default function CreateForm({ formSubmitHandler }) {
   return (
-    <form onSubmit={formSubmitHandler} className="flex flex-col w-2/3 p-2 mx-auto my-4 mt-5 rounded-sm bg-form-green">
-      <div className="flex h-10 place-content-center ">
-        <h1 className="text-lg font-medium text-center">Create Cookie Stand</h1>
+    <form onSubmit={formSubmitHandler} className="flex flex-col w-4/5 p-10 mx-auto my-4 mt-5 rounded-md bg-form-input-box-green">
+      <div className="flex flex-row mt-6">
+        <div className="flex flex-col w-2/3 h-20 text-center">
+          <p className="w-full text-xs font-bold">ADD LOCATION</p>
+          <input className="w-11/12 mt-2 h-7" name="location" placeholder=" Cookie Stand Location" />
+        </div>
+        <button className="w-1/3 mt-2 text-sm font-semibold align-middle rounded-sm h-11 bg-button-green align-text-middle">CREATE STAND</button>
       </div>
-      <div className="flex flex-row">
-        <p className="w-1/12 text-sm font-semibold">Location</p>
-        <input className="w-11/12" name="location" />
-      </div>
-      <div className="flex flex-row items-center w-full h-10 mt-6 mb-2 space-x-2">
-        <div className="w-1/4 rounded-sm h-11 bg-form-input-box-green">
-          <p className="mx-auto text-xs font-semibold text-center w-7/8">Minimum Customers per Hour</p>
-          <input className="mx-3 w-7/8 max-h-5" name="minCust" />
+      <div className="flex flex-row items-center justify-between w-full h-10 mt-2 mb-2 space-x-4 ">
+        <div className="text-center rounded-sm h-11 bg-form-input-box-green">
+          <p className="w-full mx-auto mb-2 text-xs font-bold">MINIMUM CUSTOMERS PER HOUR</p>
+          <input className="w-64 max-h-10" name="minCust" />
         </div>
-        <div className="w-1/4 rounded-sm h-11 bg-form-input-box-green">
-          <p className="mx-auto text-xs font-semibold text-center w-7/8">Maximum Customers per Hour</p>
-          <input className="mx-3 w-7/8 max-h-5" name="maxCust" />
+        <div className="text-center rounded-sm h-11 bg-form-input-box-green">
+          <p className="w-full mx-auto mb-2 text-xs font-bold">MAXIMUM CUSTOMERS PER HOUR</p>
+          <input className="w-64 max-h-10" name="maxCust" />
         </div>
-        <div className="w-1/4 rounded-sm h-11 bg-form-input-box-green">
-          <p className="mx-auto text-xs font-semibold text-center w-7/8">Average Cookies per Sale</p>
-          <input className="mx-3 w-7/8 max-h-5" name="avgCookies" />
-        </div>
-        <div className='w-1/4'>
-          <button className="w-full text-sm font-semibold align-middle rounded-sm h-11 bg-button-green align-text-middle">Create</button>
+        <div className="text-center rounded-sm h-11 bg-form-input-box-green">
+          <p className="w-full mx-auto mb-2 text-xs font-bold ">AVERAGE COOKIES PER SALE</p>
+          <input className="w-64 max-h-10" name="avgCookies" />
         </div>
       </div>
     </form>
