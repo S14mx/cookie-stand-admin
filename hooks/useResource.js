@@ -71,6 +71,5 @@ export default function useResource() {
     loading: tokens && !error && !data,
     createResource,
     deleteResource,
-    updateResource,
   };
 }

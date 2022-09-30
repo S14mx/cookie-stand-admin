@@ -1,11 +1,8 @@
 import Head from '../components/Head'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import CreateForm from '../components/CreateForm';
-import ReportTable from '../components/ReportTable';
-import { useState } from 'react'
+import CookieStandAdmin from '../components/CookieStandAdmin';
 import { useAuth } from '../contexts/auth';
-import { data } from 'autoprefixer';
 import LoginForm from '../components/LoginForm';
 
 
@@ -25,13 +22,8 @@ export default function Home() {
         <Header user={user} onLogout={logout} />
         <main className=" h-fit">
           {user
-            ? <div>
-              <CreateForm />
-              <ReportTable user={user} />
-            </div>
-            : <div>
-              <LoginForm onLogin={loginHandler} />
-            </div>
+            ? <CookieStandAdmin />
+            : <LoginForm onLogin={loginHandler} />
           }
         </main>
         <Footer />
