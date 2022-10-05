@@ -1,4 +1,4 @@
-import { hours } from "../pages/data";
+import { hours } from "../data/data";
 import useResource from '../hooks/useResource';
 import CookieStandRow from "./CookieStandRow";
 import { useState } from 'react';
